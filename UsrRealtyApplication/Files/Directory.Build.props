@@ -1,0 +1,13 @@
+<Project>
+	<ItemGroup Label="Entity Files" Condition="'$(PkgPath)' != ''">
+		<Compile Include="$(PkgPath)/UsrRealtyApplication/Schemas/UsrOfferType/UsrOfferType.cs" Condition="Exists('$(PkgPath)/UsrRealtyApplication/Schemas/UsrOfferType/UsrOfferType.cs')" />
+		<Compile Include="$(PkgPath)/UsrRealtyApplication/Schemas/UsrRealty/UsrRealty.cs" Condition="Exists('$(PkgPath)/UsrRealtyApplication/Schemas/UsrRealty/UsrRealty.cs')" />
+		<Compile Include="$(PkgPath)/UsrRealtyApplication/Schemas/UsrRealtyFile/UsrRealtyFile.cs" Condition="Exists('$(PkgPath)/UsrRealtyApplication/Schemas/UsrRealtyFile/UsrRealtyFile.cs')" />
+		<Compile Include="$(PkgPath)/UsrRealtyApplication/Schemas/UsrRealtyFolder/UsrRealtyFolder.cs" Condition="Exists('$(PkgPath)/UsrRealtyApplication/Schemas/UsrRealtyFolder/UsrRealtyFolder.cs')" />
+		<Compile Include="$(PkgPath)/UsrRealtyApplication/Schemas/UsrRealtyInFolder/UsrRealtyInFolder.cs" Condition="Exists('$(PkgPath)/UsrRealtyApplication/Schemas/UsrRealtyInFolder/UsrRealtyInFolder.cs')" />
+		<Compile Include="$(PkgPath)/UsrRealtyApplication/Schemas/UsrRealtyInTag/UsrRealtyInTag.cs" Condition="Exists('$(PkgPath)/UsrRealtyApplication/Schemas/UsrRealtyInTag/UsrRealtyInTag.cs')" />
+		<Compile Include="$(PkgPath)/UsrRealtyApplication/Schemas/UsrRealtyTag/UsrRealtyTag.cs" Condition="Exists('$(PkgPath)/UsrRealtyApplication/Schemas/UsrRealtyTag/UsrRealtyTag.cs')" />
+		<Compile Include="$(PkgPath)/UsrRealtyApplication/Schemas/UsrRealtyVisits/UsrRealtyVisits.cs" Condition="Exists('$(PkgPath)/UsrRealtyApplication/Schemas/UsrRealtyVisits/UsrRealtyVisits.cs')" />
+		<Compile Include="$(PkgPath)/UsrRealtyApplication/Schemas/UsrType/UsrType.cs" Condition="Exists('$(PkgPath)/UsrRealtyApplication/Schemas/UsrType/UsrType.cs')" />
+	</ItemGroup>
+</Project>
